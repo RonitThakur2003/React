@@ -1,6 +1,6 @@
 // console.log('hello')
 
-const nums = [1,2,3,4,5,6,7,8,9]
+// const nums = [1,2,3,4,5,6,7,8,9]
 
 // const myNums = nums.forEach( item =>  {
 //     // console.log(item)
@@ -15,9 +15,9 @@ const nums = [1,2,3,4,5,6,7,8,9]
 
 // console.log(myNums)
 
-const myNums = nums.map((item)=>{
-    return item+5
-})
+// const myNums = nums.map((item)=>{
+//     return item+5
+// })
 
 //  console.log(myNums)
 // const initial = 0
@@ -26,5 +26,18 @@ const myNums = nums.map((item)=>{
 //     return acc+cur
 // },initial)
 
-console.log(myNums)
+// console.log(myNums)
 
+
+
+// temporal dead zone and hoisting
+
+console.log(a)
+var a =10;
+
+
+// let b =10; 
+// console.log(b)
+
+// b=20;
+// console.log(b)
