@@ -39,3 +39,4 @@
 // console.log(b)
 // let b =10;       it is also hoisted but give error cant access before intialization because of temporal dead zone 
 
+// let and const in block scoped and var is functional scoped
