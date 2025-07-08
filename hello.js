@@ -32,12 +32,10 @@
 
 // temporal dead zone and hoisting
 
-console.log(a)
-var a =10;
+// console.log(a)
+// var a =10;      it is hoisted and give undefined
 
 
-// let b =10; 
 // console.log(b)
+// let b =10;       it is also hoisted but give error cant access before intialization because of temporal dead zone 
 
-// b=20;
-// console.log(b)
