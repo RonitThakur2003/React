@@ -15,16 +15,16 @@ const nums = [1,2,3,4,5,6,7,8,9]
 
 // console.log(myNums)
 
-// const myNums = nums.map((item)=>{
-//     return item+10
-// })
+const myNums = nums.map((item)=>{
+    return item+5
+})
 
 //  console.log(myNums)
-const initial = 0
-const myNums = nums.reduce((acc,cur)=>{
-    console.log(`acc: ${acc} and cur:${cur}`)
-    return acc+cur
-},initial)
+// const initial = 0
+// const myNums = nums.reduce((acc,cur)=>{
+//     console.log(`acc: ${acc} and cur:${cur}`)
+//     return acc+cur
+// },initial)
 
 console.log(myNums)
 
