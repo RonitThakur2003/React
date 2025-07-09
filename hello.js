@@ -47,8 +47,28 @@
 // console.log(1 +"5")
 
 
-const hello = (name)=>{
-    console.log(`Hello ${name}`)
-}
+// const hello = (name)=>{
+//     console.log(`Hello ${name}`)
+// }
 
-hello('Ronit')
+// hello('Ronit')
+
+// rest and spread operator
+
+
+// const hello = (...val)=>{
+//     console.log(val)
+// }
+
+// hello(1,2,3,4,5,6)
+
+// const hello = ()=>{
+//     return 10
+// }
+
+// const val = hello()
+
+// console.log(val)
+
+// higher order function are those functions which can return function aur accept function as arguments 
+// first class function are those function which can be treated as values  
