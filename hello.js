@@ -72,3 +72,27 @@
 
 // higher order function are those functions which can return function aur accept function as arguments 
 // first class function are those function which can be treated as values  
+
+
+// immediately invoked function
+// (function(){
+//     console.log('hello')
+// })()
+
+const data = {name:"Ronit",Age:21}
+
+function fetchData(){
+    return new Promise((resolve,reject) => {
+        setTimeout(()=>{
+            resolve(data)
+            // console.log(data)
+        },3000)
+    })
+}
+
+fetchData().then(
+    data =>{
+    console.log(data)
+}).catch(err=>{
+    console.log(err)
+})
