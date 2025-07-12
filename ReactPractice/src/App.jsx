@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Name from "./Name"
 
 function App() {
   let [count,setCount] = useState(5)
@@ -12,9 +13,12 @@ function App() {
     setCount(count-1)
     }
   }
+
+  const surname = "Thakur"
+
   return (
     <>
-    <h1>Hello Everyone</h1>
+    <Name username="Ronit" lastName/>
     <h2>Counter Value:{count}</h2>
     <button onClick={addValue}>Add Value</button>
     <br />
