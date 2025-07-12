@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    <Name username="Ronit" lastName/>
+    <Name username="Ronit" />
     <h2>Counter Value:{count}</h2>
     <button onClick={addValue}>Add Value</button>
     <br />
