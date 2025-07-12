@@ -79,20 +79,20 @@
 //     console.log('hello')
 // })()
 
-const data = {name:"Ronit",Age:21}
+// const data = {name:"Ronit",Age:21}
 
-function fetchData(){
-    return new Promise((resolve,reject) => {
-        setTimeout(()=>{
-            resolve(data)
-            // console.log(data)
-        },3000)
-    })
-}
+// function fetchData(){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(()=>{
+//             resolve(data)
+//             // console.log(data)
+//         },3000)
+//     })
+// }
 
-fetchData().then(
-    data =>{
-    console.log(data)
-}).catch(err=>{
-    console.log(err)
-})
+// fetchData().then(
+//     data =>{
+//     console.log(data)
+// }).catch(err=>{
+//     console.log(err)
+// })
