@@ -1,0 +1,42 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+#main{
+  margin: 0%;
+  height: 700px;
+}
+#color{
+  background-color: aqua;
+  height: 50px;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  border: none;
+}
+
+.button{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+#btn1{
+  background-color: red;
+  color: white;
+}
+#btn2{
+  background-color: blue;
+  color: white;
+}
+#btn3{
+  background-color: green;
+  color: white;
+}
+#btn4{
+  background-color: yellow;
+  color: black;
+}
