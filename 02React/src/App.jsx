@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 function App() {
   const [length, setLength] = useState(8);
@@ -12,12 +12,20 @@ function App() {
     if (numAllowed) str += "0123456789";
     if (charAllowed) str += "!@#$%^&*-_+=[]{}~'";
 
-    for (let i = 1; i < array.length; i++) {
+    for (let i = 0; i <length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
-      pass = str.charAt(char);
+      pass += str.charAt(char);
     }
     setPassword(pass);
   }, [length, numAllowed, charAllowed, setPassword]);
+
+  const copyPassword = useCallback(()=>{
+    window.navigator.clipboard.writeText(password)
+  },[password])
+
+  useEffect(()=>{
+      passwordGen()
+  },[length,numAllowed,charAllowed,passwordGen])
 
   return (
     <>
@@ -31,8 +39,9 @@ function App() {
             className="bg-white outline-none w-full py-1 px-3"
             readOnly
           />
-          <button className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0">
-            {" "}
+          <button 
+          onClick={copyPassword} 
+          className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 hover:bg-blue-400 cursor-pointer">
             copy
           </button>
         </div>
